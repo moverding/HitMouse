@@ -1,0 +1,280 @@
+#game{
+	width: 800px;
+	height:550px;	
+	margin: 20px auto;
+}		
+/*游戏初始界面*/		
+#gamemain{
+	background: url(../img/set_board.png) no-repeat;	
+				
+}
+
+.show{
+	height:550px;
+	position: relative;	
+}
+
+
+/*初始界面按钮样式*/
+#playsounds{
+	display: block;
+	width: 52px;
+	height: 52px;
+	background: url(../img/sound0.png) no-repeat;
+	position: absolute;
+	left:650px;
+	top:30px;
+	cursor: pointer;
+}
+
+#playstart{
+	display: block;
+	width: 180px;
+	height: 70px;
+	background: url(../img/play0.png) no-repeat;
+	position: absolute;
+	left:485px;
+	top:210px;
+}
+#playstart:hover{
+	background: url(../img/play1.png) no-repeat;
+}
+#playhelp{
+	display: block;
+	width: 180px;
+	height: 70px;
+	background: url(../img/help0.png) no-repeat;
+	position: absolute;
+	left:485px;
+	top:310px;
+}
+#playhelp:hover{
+	background: url(../img/help1.png) no-repeat;
+}
+#playexit{
+	display: block;
+	width: 180px;
+	height: 70px;
+	background: url(../img/exit0.png) no-repeat;
+	position: absolute;
+	left:485px;
+	top:410px;
+}
+#playexit:hover{
+	background: url(../img/exit1.png) no-repeat;
+}
+
+/*帮助页面样式*/
+#gamehelp{
+	background: url(../img/help.png) no-repeat;
+	overflow: hidden;	
+	display: none;	
+	top:50px;
+}
+
+.backmain{
+	display: block;
+	width: 200px;
+	height: 70px;
+	background: url(../img/backmain0.png) no-repeat;
+	position: absolute;
+	left:270px;
+	top:370px;
+}
+
+.backmain:hover{
+	background: url(../img/backmain1.png) no-repeat;
+}
+
+/*游戏结束*/
+#gameover{
+	background:url(../img/bg_gameover.png) no-repeat;
+	display: none;
+}
+
+.backmain2{
+	left:380px;
+	top:365px;
+}
+#restartgame{
+	display: block;
+	width: 180px;
+	height: 70px;
+	background: url(../img/start0.png) no-repeat;
+	position: absolute;
+	left:160px;
+	top:360px;
+}
+#restartgame:hover{
+	background: url(../img/start1.png) no-repeat;
+}
+
+#end_rs{
+	width: 200px;
+	height:30px;
+	position: absolute;
+	left:280px;
+	top:320px;
+	font-size:24px;
+	font-weight: 900;
+	color: #FFF544;
+}
+/*开始游戏*/
+#gamebody{
+	background:url(../img/bg_canvas.png) no-repeat;
+	display: none;
+	cursor: url(../img/hm1.png),pointer;
+}
+
+#stop{
+	display: block;
+	width: 58px;
+	height: 58px;
+	background: url(../img/stop0.png) no-repeat;
+	position: absolute;
+	left:650px;
+	top:30px;
+	cursor: pointer;
+}
+
+#showtime{
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	left:260px;
+	top:170px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+}
+/*分数显示*/
+#score{
+	width: 120px;
+	height: 30px;
+	background: url(../img/score.png) no-repeat;
+	position: absolute;
+	left:400px;
+	top:170px;
+	padding-left: 80px;
+}
+#score span{
+	display: block;
+	width: 18px;
+	height: 30px;
+	float: left;
+	
+}
+
+
+/*数字样式*/
+.num0{
+	background:url(../img/0.png) no-repeat;
+}
+.num1{
+	background:url(../img/1.png) no-repeat;
+}
+.num2{
+	background:url(../img/2.png) no-repeat;
+}
+.num3{
+	background:url(../img/3.png) no-repeat;
+}
+.num4{
+	background:url(../img/4.png) no-repeat;
+}
+.num5{
+	background:url(../img/5.png) no-repeat;
+}
+.num6{
+	background:url(../img/6.png) no-repeat;
+}
+.num7{
+	background:url(../img/7.png) no-repeat;
+}
+.num8{
+	background:url(../img/8.png) no-repeat;
+}
+.num9{
+	background:url(../img/9.png) no-repeat;
+}
+
+/*老鼠*/
+#mouse span{
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+#m1{
+	top:150px;
+	left:133px;
+}
+#m2{
+	top:150px;
+	left:320px;
+}
+#m3{
+	top:155px;
+	left:518px;
+}
+#m4{
+	top:243px;
+	left:105px;
+}
+#m5{
+	top:243px;
+	left:323px;
+}
+#m6{
+	top:243px;
+	left:523px;
+}
+#m7{
+	top:340px;
+	left:100px;
+}
+#m8{
+	top:345px;
+	left:325px;
+}
+#m9{
+	top:346px;
+	left:543px;
+}
+
+#result{
+	width: 657px;
+	height:215px;
+	background: url(../img/next.png) no-repeat;
+	position: absolute;
+	top:260px;
+	left:50px;
+	z-index: 5;
+	display: none;
+}
+
+#showresult{
+	width: 100px;
+	height:100px;
+	float:left;
+	margin:40px 0px 0px 300px;
+	font-size:24px;
+	font-weight: 900;
+	color: #FF9933;
+}
+
+#showresult p{
+	margin:7px ;
+}
+
+#next{
+	width: 180px;
+	height:60px;
+	float:right;
+	margin:50px 50px 0px 0px;
+	cursor: pointer;
+	
+}
+

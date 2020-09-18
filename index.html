@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>打地鼠</title>
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+	<body>
+		<!--游戏声音-->
+		<audio id="ad" src="audio/game_music.mp3" autoplay="autoplay" loop="loop" preload="auto"></audio>
+		<div id="game">
+			<!--游戏初始界面-->
+			<div id="gamemain" class="show">
+				<span id="playsounds"  onclick="setSounds(this)"></span>
+				<span id="playstart" onclick="startGame(this)"></span>
+				<span id="playhelp" onclick="showHelp(this)"></span>
+				<span id="playexit" onclick="exit()"></span>
+			</div>
+			<!--游戏帮助界面-->
+			<div id="gamehelp" class="show">
+				<span onclick="backMain(this)" class="icon backmain"></span>
+			</div>
+			<!--游戏主体界面-->
+			<div id="gamebody" class="show"  onmousedown="mouseDown(this)" onmouseup="mouseUp(this)">
+				<span id="stop"  onclick="setStop(this)" ></span>
+				<div id="showtime">时间：<span id="time">0</span></div>
+				<div id="score">
+					<span id="sc0" class="num0"></span>
+					<span id="sc1" class=""></span>
+					<span id="sc2" class=""></span>
+					<span id="sc3" class=""></span>
+					<span id="sc4" class=""></span>
+					<span id="sc5" class=""></span>
+				</div>
+				
+                	<div id="hammer"></div>
+                
+				<div id="mouse">
+					<span id="m1" onclick="hitMouse(this)"></span>
+					<span id="m2" onclick="hitMouse(this)"></span>
+					<span id="m3" onclick="hitMouse(this)"></span>
+					<span id="m4" onclick="hitMouse(this)"></span>
+					<span id="m5" onclick="hitMouse(this)"></span>
+					<span id="m6" onclick="hitMouse(this)"></span>
+					<span id="m7" onclick="hitMouse(this)"></span>
+					<span id="m8" onclick="hitMouse(this)"></span>
+					<span id="m9" onclick="hitMouse(this)"></span>
+				</div>
+				<div id="result">
+					<div id="showresult">
+						<p id="sresult">23423</P>
+						<p>5000</p>
+					</div>
+					<div id="next" onclick="nextPass(this)"></div>
+				</div>
+			</div>
+			<!--游戏结束界面-->
+			<div id="gameover" class="show">
+				<div id="end_rs">您的得分：<span id="end_result">0</span></div>
+				<span id="restartgame" class="icon" onclick="restartGame(this)"></span> 
+				<span onclick="backMain(this)" class="icon backmain backmain2"></span>
+			</div>
+		</div>
+	
+		<script type="text/javascript" src="js/game.js" ></script>
+		
+	</body>
+</html>
+
